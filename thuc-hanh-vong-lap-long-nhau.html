@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Lồng nhau</title>
+</head>
+<body>
+<script>
+     var so;
+     so = "<table border='1' width='300' cellspacing='0' cellpadding='3'>"
+     for (i = 1; i <= 10; i++) {
+        so = so + "<tr>";
+        for (j = 1; j <= 10; j++) {
+            so = so + "<td>" + i * j + "</td>";
+        }
+        so = so + "</tr>";
+     }
+    so = so + "</table>";
+    document.write (so);
+ </script>
+ <script language="javascript">
+     var so1, i, j;
+     so1 = "<table border='1' width='300' cellspacing='0' cellpadding='3'>";
+     i = j = 1;
+     while (i <= 10) {
+         so1 = so1 + "<tr>";
+         while (j <= 10) {so1
+             so1 = so1 + "<td>" + i * j + "</td>";
+             j++;
+         }
+         so1 = so1 + "</tr>";
+         j = 1;
+         i++;
+     }
+     so1 = so1 + "</table>";
+     document.write (so1);
+ </script>
+</body>
+</html>
